@@ -14,9 +14,7 @@ header {
   background-color: #00343d;
   font-family: "Oleo Script", sans-serif;
   list-style: none;
-  margin-right: 50px;
   font-size: 2rem;
-  display: inline-block;
   opacity: 0.8;
 }
 .navbar-nav li a:hover {
@@ -37,7 +35,7 @@ main {
   padding: 30px 100px 30px 100px;
   height: 100vh;
 }
-.div-Hero {
+.div-hero {
   padding: 50px;
 }
 .bg-color-principal {
@@ -69,18 +67,18 @@ nav .navbar-toggler {
 }
 .titulo {
   margin-top: 100px;
-  font-size: 80px;
+  font-size: 60px;
   color: #054a50;
   font-family: "Be Vietnam Pro", sans-serif;
   font-weight: bold;
 }
 main p {
-  padding: 30px;
-  margin-top: 80px;
+  margin-top: 50px;
   text-align: center;
   color: #43676d;
   font-family: "Oleo Script", sans-serif;
   font-size: 50px;
+  padding: 20px;
 }
 .icono {
   margin: 30px 50px 30px 50px;
@@ -95,6 +93,37 @@ main p {
 }
 .section-productos {
   margin-top: 80px;
+  justify-content: center;
+}
+.row {
+  --bs-gutter-x: 0;
+}
+.card {
+  width: 400px;
+}
+.precio {
+  margin: 0;
+  font-size: 50px;
+  color: rgb(255, 176, 127);
+}
+.card-text {
+  font-size: larger;
+  margin: 20px;
+  color: aliceblue;
+}
+.div-hero:last-child:hover {
+  background-color: #d0ecee;
+}
+.titulo-producto {
+  margin-top: 80px;
+  font-family: "Oleo Script", sans-serif;
+  color: #1f5761;
+  font-size: 80px;
+}
+.card-title {
+  margin: 10px;
+  font-size: 30px;
+  color: #d0ecee;
 }
 footer h3 {
   font-family: "Times New Roman", Times, serif, sans-serif;
@@ -105,4 +134,105 @@ footer p {
   font-weight: bold;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 800px) {
+  .container-hero {
+    padding: 0;
+  }
+  body {
+    background-color: rgb(255, 176, 127);
+  }
+  .container-fluid {
+    width: 80%;
+  }
+  .titulo {
+    font-size: 40px;
+  }
+  main p {
+    padding: 0;
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .container-hero img {
+    width: 200px;
+    height: 350px;
+  }
+  .div-hero {
+    height: 50vh;
+  }
+  .icono {
+    width: 40px;
+    margin: 0;
+  }
+
+  .container-main {
+    height: 100vh;
+  }
+  .img-hero {
+    margin-top: 30px;
+  }
+  .container-fluid {
+    --bs-gutter-x: 0;
+  }
+  .container {
+    --bs-gutter-x: 0;
+  }
+  .card {
+    width: 90%;
+  }
+  footer a {
+    width: 50px;
+    margin-left: 20px;
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 13px;
+  }
+  footer {
+    position: relative;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  .container-hero {
+    margin-top: 100px;
+    padding: 0;
+  }
+  body {
+    background-color: rgb(255, 176, 127);
+  }
+  .container-fluid {
+    width: 100%;
+  }
+  .titulo {
+    font-size: 40px;
+  }
+  main p {
+    padding: 0;
+    margin-top: 0;
+    font-size: 30px;
+  }
+  .container-hero img {
+    width: 200px;
+    height: 350px;
+  }
+  .div-hero {
+    height: 50vh;
+  }
+
+  .container-main {
+    height: 100vh;
+  }
+  .img-hero {
+    margin-top: 30px;
+  }
+  .container-fluid {
+    --bs-gutter-x: 0;
+  }
+  .container {
+    --bs-gutter-x: 0;
+  }
 }
